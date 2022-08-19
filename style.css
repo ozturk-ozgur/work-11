@@ -1,0 +1,190 @@
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  background-color: rgb(103, 102, 102);
+}
+
+header {
+  color: white;
+  background-color: rgb(78, 76, 76);
+  text-align: center;
+  padding: 0.2rem;
+  grid-area: header;
+  position: fixed;
+  width: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 0;
+}
+
+.main-box {
+  grid-area: main;
+  display: grid;
+  grid-template-areas: 
+  " il1 il2 il3 "
+  " il4 il5 il6 "
+  "il7 il8 il9 ";
+   gap: 1rem; 
+   justify-content:center; 
+   margin: 10rem 0; 
+}
+
+.main-box .profil {
+  justify-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+    display: flex;
+  align-items: flex-end; 
+}
+
+.profil-name {
+  background-color: rgba(184, 179, 179, 0.581);
+  color: white;
+  display: inline-block;
+  padding: 1rem;
+  margin-right: auto;
+}
+
+.camera-icon {
+  display: inline-block;
+}
+
+.main-box .pro1 {
+  background: url("./assets/student-1.jpeg") no-repeat;
+  grid-area: il1;
+  width: 100%;
+}
+
+.main-box .pro2 {
+  background: url("./assets/student-2.jpeg") no-repeat;
+  grid-area: il2;
+
+}
+
+.main-box .pro3 {
+  background: url("./assets/student-3.jpeg") no-repeat;
+  grid-area: il3;
+
+}
+
+.main-box .pro4 {
+  background: url("./assets/student-4.jpeg") no-repeat;
+  grid-area: il4;
+
+}
+
+.main-box .pro5 {
+  background: url("./assets/student-5.jpeg") no-repeat;
+  grid-area: il5;
+
+}
+
+.main-box .pro6 {
+    background: url("./assets/student-6.jpeg") no-repeat;
+    grid-area: il6;
+
+}
+
+.main-box .pro7 {
+  background: url("./assets/student-7.jpeg") no-repeat;
+  grid-area: il7;
+
+}
+
+.main-box .pro8 {
+  background: url("./assets/student-8.jpeg") no-repeat;
+  grid-area: il8;
+
+}
+
+.main-box .pro9 {
+  background: url("./assets/student-9.jpeg") no-repeat;
+  grid-area: il9;
+
+}
+
+footer {
+  grid-area: footer;
+  display: grid;
+  color: white;
+  background-color: rgb(78, 76, 76);
+  text-align: center;
+  padding: 1rem 1rem;
+  align-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
+  grid-template-areas: " icon1 icon2 icon3 icon4 icon5 ";
+}
+
+.footer-leave {
+  background-color: red;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  line-height: 50px;
+}
+
+.footer-btn {
+  /* width: 10vw; */
+}
+
+.footer-icon1 {
+  grid-area: icon1;
+}
+
+.footer-icon2 {
+  grid-area: icon2;
+}
+
+.footer-icon3 {
+  grid-area: icon3;
+}
+
+.footer-icon4 {
+  grid-area: icon4;
+}
+
+.footer-last-child {
+  grid-area: icon5;
+}
+
+@media (max-width:1000px) {
+
+    .main-box {
+        grid-template-areas: 
+        " il1 il2 "
+        " il3 il4 "
+        "il5 il6";
+      }
+
+}
+
+@media (max-width:500px) {
+
+    .main-box {
+        grid-template-areas: 
+        " il1"
+        " il2 "
+        "il3";
+      }
+
+}
